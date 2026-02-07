@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A0276552F37A89900E43393 /* CuePilot.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6A0276542F37A88D00E43393 /* CuePilot.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A5AAF712F369B56007C6EB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A0276542F37A88D00E43393 /* CuePilot.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CuePilot.txt; sourceTree = "<group>"; };
 		6A5AAF612F369B55007C6EB7 /* CuePilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuePilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5AAF702F369B56007C6EB7 /* CuePilotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuePilotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5AAF7A2F369B56007C6EB7 /* CuePilotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuePilotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +80,7 @@
 		6A5AAF582F369B55007C6EB7 = {
 			isa = PBXGroup;
 			children = (
+				6A0276542F37A88D00E43393 /* CuePilot.txt */,
 				6A5AAF632F369B55007C6EB7 /* CuePilot */,
 				6A5AAF732F369B56007C6EB7 /* CuePilotTests */,
 				6A5AAF7D2F369B56007C6EB7 /* CuePilotUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0276552F37A89900E43393 /* CuePilot.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

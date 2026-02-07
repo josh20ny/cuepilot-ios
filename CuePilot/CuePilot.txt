@@ -1,0 +1,43 @@
+CuePilot (Version 1.0)
+
+CuePilot is an app to combine Service Plans from Planning Center and Producer Cues for producers that are running Church Services
+
+The idea is that the user opens up the app, logs in with their own email, connects to their Church, and then is able
+to see upcoming service plans from Planning Center, use those plans to then create producer cues (from scratch or from pre selected templates),
+then run the cues live in a service using the internal clock relative to the times set on the Service Plan from planning center..
+
+On Launch:
+The user is asked to sign into their account. Once signed in, they search for their church's account and then request to join the team.
+Once accepted they see a list of upcoming Service plans. The user would then choose a service to begin editing the cuelist.
+
+Editing Mode:
+The users sees the layout of the service exactly as they would in planning center and then has the option to add cues before each section. Everything
+that has a time associated with it in the Planning Center Plan is considered a "Section" of the service and can have Producer Cues to transition
+into it. Once cues are created, they can be saved to that service and also 'Saved as a Template'. Users can then
+reference template cues when creating other cuelists.
+
+Template Center:
+A place where users can view, create, edit, and delete Template cues.
+
+Live Mode:
+In Live Mode the screen shows on the left side of the screen (25% the width) the whole service plan + producer cues with the time stamps of when
+each section of the srevice should begin. In the middle of the screen (50% the width) the user see the Cues they need to call in order to transition
+to the next part of the service. For example, at the beginning of the service there are cues at different time stamps to hit – 2 minute warning,
+flash foyer lights – 1 minute warning  – 30 Seconds, flash foyer lights – 10, 9, 8, 7, 6, 5, 4, 3, Clear lights (2), clear screens & music (1), Roll Video (0).
+Then the producer would hit a NEXT button that indicates the first part of the services has begun, and the middle screen would then show the next
+set of cues to move the service from the opening video into the hsot on stage. And so-on through the service. At the top of the screen there are three clocks.
+The First is the actual local time, the second is a timer for how long you've been in this section of the service, and the third is a the time you need to
+be in the next part of the service based on the plan imported from Planning Center. The right side of the screen (25% Width) is a section where a producer
+can add notes to cues or service sections using the either the magic keyboard or apple pencil.
+
+Once a service is complete, a summary is created, saved to the user and church's account showing a recap of the service with planned versus acutal time and notes.
+
+When in Live Mode, CuePilot references all times in the planning center plan. So if there are two+ times indicated next to a section, CuePilot understands this
+as an indicator for multiple services. Say the last section of the service says it ends at 10:30 and 12:00, after the first service is complete, CuePilot then sets
+for the next service by looking for the next closest time (e.g. Production Team in places - 10:55AM) and treats it like another section of the service. 
+
+Business Model:
+The business model of this app includes a free and paid tier. The free tier allows you to import services and create cue lists that can then be exported into a PDF
+to be printed and used. Once a paying member, the user can then use features like cue templates, live mode, and the service recap.
+
+Over time users can track where their services run over or under their planned for time.
