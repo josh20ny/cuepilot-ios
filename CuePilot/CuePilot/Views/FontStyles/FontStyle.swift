@@ -20,7 +20,7 @@ enum FontStyle {
     
     var fontName: String {
         switch self {
-        case .title, .body, .bodyBold: "Inter-VariableFont_opsz,wght"
+        case .title, .body, .bodyBold: "Inter"
         case .bodyMonospace, .h3Monospace, .h5Monospace: "FiraMono-Regular"
         }
     }
