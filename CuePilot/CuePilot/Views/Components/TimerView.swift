@@ -9,7 +9,10 @@ import SwiftUI
 
 struct TimerView: View {
     @ScaledMetric private var scale: CGFloat = 1.0
-    
+
+    private let clockFormatter = WallClockFormatter()
+    private let intervalFormatter = TimeIntervalFormatter()
+
     enum TimeDisplay {
         case wallClock(Date)
         case timer(TimeInterval)
@@ -17,18 +20,8 @@ struct TimerView: View {
     
     private var formattedTime: String {
         switch time {
-        case .wallClock(let date):
-            let formatter = DateFormatter()
-            formatter.locale = Locale.current
-            formatter.timeZone = TimeZone.current
-            formatter.dateFormat = "hh:mm:ss a"
-            return formatter.string(from: date)
-            
-        case .timer(let interval):
-            let hours = Int(interval) / 3600
-            let minutes = (Int(interval) % 3600) / 60
-            let seconds = Int(interval) % 60
-            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+            case .wallClock(let date): clockFormatter.string(from: date)
+            case .timer(let interval): intervalFormatter.string(from: interval)
         }
     }
     
@@ -77,9 +70,16 @@ struct TimerView: View {
         Color.backgroundPrimary
             .ignoresSafeArea()
         
-        TimerView(
-            label: "Time in Current",
-            time: .timer(535)
-        )
+        HStack(spacing: .space48) {
+            TimerView(
+                label: "Time in Current",
+                time: .timer(535)
+            )
+
+            TimerView(
+                label: "Time in Current",
+                time: .timer(-757)
+            )
+        }
     }
 }
