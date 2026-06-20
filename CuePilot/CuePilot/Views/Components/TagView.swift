@@ -28,7 +28,7 @@ struct TagView: View {
             )
             .overlay(
                 Capsule()
-                    .stroke(componentStroke)
+                    .stroke(componentStroke, lineWidth: 2)
             )
     }
 }

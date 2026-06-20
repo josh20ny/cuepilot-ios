@@ -1,5 +1,5 @@
 //
-//  PlanningCenterItemView.swift
+//  ServiceElementRow.swift
 //  CuePilot
 //
 //  Created by Chris McSorley on 2/24/26.
