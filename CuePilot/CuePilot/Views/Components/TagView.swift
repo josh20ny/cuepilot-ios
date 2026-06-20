@@ -17,6 +17,7 @@ struct TagView: View {
     var body: some View {
         LabeledCapsule(title: tag.rawValue)
             .tagStyle(tag)
+            .componentFontStyle(.bodyMonospace)
             .componentFrame(width: 160.0)
     }
 }

@@ -13,7 +13,7 @@ struct LiveView: View {
     @ScaledMetric(relativeTo: FontStyle.bodyBold.textStyle) private var cueWidth = 300.0
 
     // MARK: - Constants
-    private let liveCapsuleHeight = 35.0
+    private let liveCapsuleHeight = 40.0
 
     // MARK: - Properties
     @State private var viewModel = LiveViewModel()
@@ -45,11 +45,11 @@ struct LiveView: View {
 
     private var liveCapsule: some View {
         LabeledCapsule(title: "LIVE")
-            .componentFrame(width: 125, height: liveCapsuleHeight)
+            .componentFrame(width: 175, height: liveCapsuleHeight)
+            .componentFontStyle(.h3Monospace)
             .componentFill(.red1Translucent)
             .componentStroke(.red1)
             .componentForeground(.red1)
-            .font(.customFont(.h3Monospace))
     }
 
     private var times: some View {

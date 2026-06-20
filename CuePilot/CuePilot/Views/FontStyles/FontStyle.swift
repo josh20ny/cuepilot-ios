@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum FontStyle {
+public enum FontStyle {
     case title
     case body
     case bodyBold

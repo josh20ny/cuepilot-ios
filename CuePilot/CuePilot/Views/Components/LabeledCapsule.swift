@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LabeledCapsule: View {
+    @Environment(\.componentFontStyle) private var componentFontStyle
     @Environment(\.componentForeground) private var componentForeground
     @Environment(\.componentStroke) private var componentStroke
     @Environment(\.componentFill) private var componentFill
@@ -18,7 +19,7 @@ struct LabeledCapsule: View {
     var body: some View {
         Text(title)
             .foregroundStyle(componentForeground)
-            .font(.customFont(.bodyMonospace))
+            .font(.customFont(componentFontStyle))
             .padding(.vertical, .space8)
             .padding(.horizontal, .space24)
             .frame(width: componentFrame.width, height: componentFrame.height)
@@ -40,11 +41,11 @@ struct LabeledCapsule: View {
         
         VStack(spacing: .space24) {
             LabeledCapsule(title: "LIVE")
-                .componentFrame(width: 125)
+                .componentFrame(width: 200)
+                .componentFontStyle(.h3Monospace)
                 .componentFill(.red1Translucent)
                 .componentStroke(.red1)
                 .componentForeground(.red1)
-                .font(.customFont(.h3Monospace))
 
             LabeledCapsule(title: "+ Band In-Ears")
                 .componentStroke(.blue1)
